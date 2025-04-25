@@ -1,0 +1,15 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "Ancient Sword of Azrael",
+        "description": "An ancient sword forged in the fires of Azrael, said to grant its wielder immense power.",
+        "posted_by": "Archaeologist_101",
+        "posted_on": "2025-04-23",
+        "comments": ["Amazing!", "Where is it now?"],
+        "likes": 15,
+        "tags": ["weapon", "ancient", "legend"]
+      }
+    ]
+  }
+  
