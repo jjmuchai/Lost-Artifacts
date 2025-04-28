@@ -1,16 +1,107 @@
-import React from 'react';
-import ArtifactForm from '../components/Forms';
+import React, { useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const AddArtifact = () => {
-  const handleFormSubmit = (artifactData) => {
-    // Logic to handle the artifact submission
-    console.log(artifactData);
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    title: '',
+    description: '',
+    posted_by: '',
+    tags: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const newPost = {
+      title: formData.title,
+      description: formData.description,
+      posted_by: formData.posted_by,
+      tags: formData.tags.split(',').map(tag => tag.trim()),
+      comments: [],
+      likes: 0,
+      posted_on: new Date().toISOString().split('T')[0]
+    };
+
+    try {
+      await axios.post('http://localhost:5000/posts', newPost); 
+      navigate('/'); // After adding, go back to Home
+    } catch (error) {
+      console.error('Error adding artifact:', error);
+    }
   };
 
   return (
-    <div className='add-artifact'>
-      <h1>Add New Artifact</h1>
-      <ArtifactForm onSubmit={handleFormSubmit} />
+    <div className="max-w-3xl mx-auto mt-10 p-8 bg-white rounded-2xl shadow-2xl">
+      <h2 className="text-3xl font-bold text-center mb-8 text-blue-700">Add New Artifact</h2>
+      <form onSubmit={handleSubmit} className="space-y-6">
+        <div>
+          <label className="block mb-2 text-gray-700 font-semibold">Title</label>
+          <input
+            type="text"
+            name="title"
+            value={formData.title}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter artifact title"
+          />
+        </div>
+
+        <div>
+          <label className="block mb-2 text-gray-700 font-semibold">Description</label>
+          <textarea
+            name="description"
+            value={formData.description}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            rows="5"
+            placeholder="Describe the artifact"
+          ></textarea>
+        </div>
+
+        <div>
+          <label className="block mb-2 text-gray-700 font-semibold">Posted By</label>
+          <input
+            type="text"
+            name="posted_by"
+            value={formData.posted_by}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Your username"
+          />
+        </div>
+
+        <div>
+          <label className="block mb-2 text-gray-700 font-semibold">Tags (comma separated)</label>
+          <input
+            type="text"
+            name="tags"
+            value={formData.tags}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="e.g. ancient, weapon, rare"
+          />
+        </div>
+
+        <button
+          type="submit"
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+        >
+          Add Artifact
+        </button>
+      </form>
     </div>
   );
 };

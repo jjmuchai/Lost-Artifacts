@@ -1,15 +1,190 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "title": "Ancient Sword of Azrael",
-        "description": "An ancient sword forged in the fires of Azrael, said to grant its wielder immense power.",
-        "posted_by": "Archaeologist_101",
-        "posted_on": "2025-04-23",
-        "comments": ["Amazing!", "Where is it now?"],
-        "likes": 15,
-        "tags": ["weapon", "ancient", "legend"]
-      }
-    ]
-  }
-  
+  "posts": [
+    {
+      "title": "Cursed Omulet of Sorrow",
+      "description": "A dark amulet that brings misfortune to anyone who wears it. Once owned by a cursed sorceress.",
+      "posted_by": "Explorer_22",
+      "tags": [
+        "amulet",
+        "cursed",
+        "dark magic"
+      ],
+      "comments": [
+        "So creepy!",
+        "What happened to the sorceress?"
+      ],
+      "likes": 26,
+      "posted_on": "2025-04-24",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Cursed Amulet of Sorrow",
+      "description": "A dark amulet that brings misfortune to anyone who wears it. Once owned by a cursed sorceress.",
+      "posted_by": "Explorer_21",
+      "posted_on": "2025-04-24",
+      "comments": [
+        "So creepy!",
+        "What happened to the sorceress?"
+      ],
+      "likes": 25,
+      "tags": [
+        "amulet",
+        "cursed",
+        "dark magic"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Phoenix Feather Wand",
+      "description": "A wand made from the feather of a phoenix, known to grant its user the ability to control fire.",
+      "posted_by": "Mage_45",
+      "posted_on": "2025-04-25",
+      "comments": [
+        "Powerful magic!",
+        "I want this wand!"
+      ],
+      "likes": 50,
+      "tags": [
+        "wand",
+        "phoenix",
+        "fire"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Golden Shield of Valiant",
+      "description": "A magnificent shield, said to be unbreakable, once wielded by the heroic knight Valiant.",
+      "posted_by": "Knight_77",
+      "posted_on": "2025-04-26",
+      "comments": [
+        "This is legendary!",
+        "I need this for my collection."
+      ],
+      "likes": 30,
+      "tags": [
+        "shield",
+        "gold",
+        "heroic"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Elven Bow of the Elders",
+      "description": "A bow crafted by the ancient elves, said to have unparalleled accuracy and power.",
+      "posted_by": "Archer_99",
+      "posted_on": "2025-04-27",
+      "comments": [
+        "Amazing craftsmanship!",
+        "Is this still in existence?"
+      ],
+      "likes": 18,
+      "tags": [
+        "bow",
+        "elf",
+        "archery"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Mysterious Ancient Tablet",
+      "description": "A stone tablet covered with strange inscriptions, thought to contain the secrets of an ancient civilization.",
+      "posted_by": "Historian_12",
+      "posted_on": "2025-04-28",
+      "comments": [
+        "What does it say?",
+        "Is it readable?"
+      ],
+      "likes": 12,
+      "tags": [
+        "tablet",
+        "ancient",
+        "mystery"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Dragon Scale Armor",
+      "description": "An armor made from the scales of a dragon, said to offer unmatched protection.",
+      "posted_by": "Warrior_88",
+      "posted_on": "2025-04-29",
+      "comments": [
+        "How do you acquire dragon scales?",
+        "This would be great for battle."
+      ],
+      "likes": 35,
+      "tags": [
+        "armor",
+        "dragon",
+        "protection"
+      ]
+    },
+    {
+      "title": "Crystal of Eternal Light",
+      "description": "A radiant crystal that shines with the light of a thousand suns, said to have healing properties.",
+      "posted_by": "Priestess_34",
+      "tags": [
+        "crystal",
+        "light",
+        "healing"
+      ],
+      "comments": [
+        "Incredible!",
+        "Can it heal wounds?"
+      ],
+      "likes": 41,
+      "posted_on": "2025-04-30",
+      "id": "8"
+    },
+    {
+      "id": "9",
+      "title": "Crown of the Forgotten King",
+      "description": "A royal crown that was lost to time, said to hold immense power over life and death.",
+      "posted_by": "King_123",
+      "posted_on": "2025-05-01",
+      "comments": [
+        "Where is it now?",
+        "This crown is a piece of history."
+      ],
+      "likes": 25,
+      "tags": [
+        "crown",
+        "royalty",
+        "power"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Staff of the Sun God",
+      "description": "A staff that was said to be blessed by the Sun God himself, capable of controlling the sun's rays.",
+      "posted_by": "Priest_77",
+      "posted_on": "2025-05-02",
+      "comments": [
+        "What powers does it have?",
+        "Can it summon the sun?"
+      ],
+      "likes": 60,
+      "tags": [
+        "staff",
+        "godly",
+        "sun"
+      ]
+    },
+    {
+      "title": "Phoenix Feather Batman",
+      "description": "A legend of ancient times who used to distrurb people. In their dreams he could appear. 🚀and burn 🔥",
+      "posted_by": "Pope the thirdb",
+      "tags": [
+        "Truth",
+        "Delusions",
+        "sensual"
+      ],
+      "comments": [
+        "got it"
+      ],
+      "likes": 1,
+      "posted_on": "2025-04-27",
+      "id": "7177"
+    }
+  ]
+}

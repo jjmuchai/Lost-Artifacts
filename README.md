@@ -1,12 +1,61 @@
-# React + Vite
+# 🏺 Lost Artifacts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple full-stack web app for creating, viewing, editing, liking, and deleting artifacts.  
+Built with **React**, **TailwindCSS**, and a fake backend using **json-server**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+👉 [Deployment Link Here](https://your-deployment-link.com)  
+<!-- Replace the link above with your actual deployment link once deployed -->
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Screenshots
+
+| View | Preview |
+|-----|------|
+| Home Page | ![Home Page Screenshot](screenshots/home.png) |
+| Artifact Details | ![Artifact Details Screenshot](screenshots/details.png) |
+| Edit Artifact | ![Edit Page Screenshot](screenshots/edit.png) |
+
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend**: React, TailwindCSS
+- **Backend**: json-server (mock REST API)
+- **Other Libraries**:
+  - Axios (API requests)
+  - React Router (page routing)
+  - SweetAlert2 (nice alert modals)
+
+---
+
+## 🛠 Local Setup
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/artifact-collection-app.git
+cd artifact-collection-app
+
+
+
+✨ Features
+Create, edit, and delete artifacts
+
+Like artifacts
+
+Add and view comments on artifacts
+
+Smooth UI with Tailwind
+
+Beautiful alerts with SweetAlert2
+
+
+🙏 Credits
+Developed by James Muchai
+
+Icons and design inspiration from Tailwind UI
+

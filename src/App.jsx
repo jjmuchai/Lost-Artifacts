@@ -6,6 +6,7 @@ import EditArtifact from './pages/EditArtifact';
 import ArtifactDetails from './pages/ArtifactDetails';
 import Navbar from './components/Navbar';
 import SearchResults from './pages/SearchResults';
+import ExploreTags from './pages/ExploreTags';
 import './index.css';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
             <Route path="/add" element={<AddArtifact />} />
             <Route path="/edit/:id" element={<EditArtifact />} />
             <Route path="/artifact/:id" element={<ArtifactDetails />} />
+            <Route path="/tags" element={<ExploreTags />} />
             <Route path='/search' element={<SearchResults />} />
           </Routes>
         </div>
