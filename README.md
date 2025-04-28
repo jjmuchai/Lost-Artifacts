@@ -8,17 +8,17 @@ Built with **React**, **TailwindCSS**, and a fake backend using **json-server**.
 ## 🚀 Live Demo
 
 👉 [Deployment Link Here](https://your-deployment-link.com)  
-<!-- Replace the link above with your actual deployment link once deployed -->
+
 
 ---
 
 ## 📸 Screenshots
-
+<!-- 
 | View | Preview |
 |-----|------|
 | Home Page | ![Home Page Screenshot](screenshots/home.png) |
 | Artifact Details | ![Artifact Details Screenshot](screenshots/details.png) |
-| Edit Artifact | ![Edit Page Screenshot](screenshots/edit.png) |
+| Edit Artifact | ![Edit Page Screenshot](screenshots/edit.png) | -->
 
 ---
 
@@ -37,8 +37,8 @@ Built with **React**, **TailwindCSS**, and a fake backend using **json-server**.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/artifact-collection-app.git
-cd artifact-collection-app
+git clone git@github.com:jjmuchai/Lost-Artifacts.git
+cd Lost-Artifacts
 
 
 
