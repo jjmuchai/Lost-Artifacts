@@ -5,9 +5,11 @@ Built with **React**, **TailwindCSS**, and a fake backend using **json-server**.
 
 ---
 
-## 🚀 Live Demo
+## 🌍 Live Deployment
 
-👉 [Deployment Link Here](https://your-deployment-link.com)  
+- Frontend (Netlify): [https://lost-art.netlify.app/](https://lost-art.netlify.app/)
+<!-- - Backend (Render): []() -->
+
 
 
 ---
