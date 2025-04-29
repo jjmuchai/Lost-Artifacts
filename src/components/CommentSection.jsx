@@ -13,7 +13,7 @@ const CommentSection = ({ artifactId, comments, refreshArtifact }) => {
 
     try {
       const updatedComments = [...comments, newComment];
-      await axios.patch(`http://localhost:5000/posts/${artifactId}`, {
+      await axios.patch(`https://lost-artifacts.onrender.com/posts/${artifactId}`, {
         comments: updatedComments
       });
       Swal.fire('Success!', 'Comment added successfully.', 'success');

@@ -11,7 +11,7 @@ const ArtifactDetails = () => {
 
   const fetchArtifact = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/posts/${id}`);
+      const res = await axios.get(`https://lost-artifacts.onrender.com/posts/${id}`);
       setArtifact(res.data);
     } catch (error) {
       console.error('Error fetching artifact:', error);
@@ -39,7 +39,7 @@ const ArtifactDetails = () => {
 
     if (result.isConfirmed) {
       try {
-        await axios.delete(`http://localhost:5000/posts/${id}`);
+        await axios.delete(`https://lost-artifacts.onrender.com/posts/${id}`);
         Swal.fire('Deleted!', 'Your artifact has been deleted.', 'success');
         window.location.href = '/';
       } catch (error) {
@@ -50,7 +50,7 @@ const ArtifactDetails = () => {
 
   const handleLike = async () => {
     try {
-      await axios.patch(`http://localhost:5000/posts/${id}`, {
+      await axios.patch(`https://lost-artifacts.onrender.com/posts/${id}`, {
         likes: artifact.likes + 1
       });
       Swal.fire('Liked!', 'You liked this artifact.', 'success');

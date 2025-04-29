@@ -32,7 +32,7 @@ const AddArtifact = () => {
     };
 
     try {
-      await axios.post('http://localhost:5000/posts', newPost); 
+      await axios.post('https://lost-artifacts.onrender.com/posts', newPost); 
       navigate('/'); // After adding, go back to Home
     } catch (error) {
       console.error('Error adding artifact:', error);

@@ -8,7 +8,7 @@ const ExploreTags = () => {
 
   const fetchArtifacts = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/posts');
+      const res = await axios.get('https://lost-artifacts.onrender.com/posts');
       setArtifacts(res.data);
     } catch (error) {
       console.error('Error fetching artifacts:', error);

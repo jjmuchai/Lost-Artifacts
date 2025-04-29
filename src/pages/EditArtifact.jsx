@@ -12,7 +12,7 @@ const EditArtifact = () => {
   useEffect(() => {
     const fetchArtifact = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/posts/${id}`);
+        const res = await axios.get(`https://lost-artifacts.onrender.com/posts/${id}`);
         setArtifact({
           title: res.data.title,
           description: res.data.description,
@@ -51,7 +51,7 @@ const EditArtifact = () => {
         posted_on: artifact.posted_on || new Date().toISOString().split('T')[0]
       };
 
-      await axios.put(`http://localhost:5000/posts/${id}`, updatedArtifact);
+      await axios.put(`https://lost-artifacts.onrender.com/posts/${id}`, updatedArtifact);
       navigate('/');
     } catch (error) {
       console.error('Error updating artifact:', error);

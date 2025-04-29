@@ -7,7 +7,7 @@ const ArtifactCard = ({ artifact }) => {
   const handleLike = async () => {
     try {
       const updatedArtifact = { ...artifact, likes: artifact.likes + 1 };
-      await axios.patch(`http://localhost:5000/posts/${artifact.id}`, { likes: updatedArtifact.likes });
+      await axios.patch(`https://lost-artifacts.onrender.com/posts/${artifact.id}`, { likes: updatedArtifact.likes });
       Swal.fire({
         icon: 'success',
         title: 'Liked!',

@@ -19,7 +19,7 @@ const Home = () => {
 
   const fetchArtifacts = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/posts');
+      const res = await axios.get('https://lost-artifacts.onrender.com/posts');
       setArtifacts(res.data);
     } catch (error) {
       console.error('Failed to fetch artifacts', error);
@@ -35,7 +35,7 @@ const Home = () => {
   // Add new artifact
   const addArtifact = async (newArtifact) => {
     try {
-      const res = await axios.post('http://localhost:5000/posts', newArtifact);
+      const res = await axios.post('https://lost-artifacts.onrender.com/posts', newArtifact);
       setArtifacts(prev => [...prev, res.data]);
     } catch (error) {
       console.error('Failed to add artifact', error);
